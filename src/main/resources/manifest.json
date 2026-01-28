@@ -1,0 +1,23 @@
+{
+  "Group": "Morgott",
+  "Name": "UltimateSaver",
+  "Version": "1.0.0",
+  "Description": "Per-weapon ultimate charge storage. Each weapon remembers its SignatureEnergy when switching.",
+  "Authors": [
+    {
+      "Name": "Morgott"
+    }
+  ],
+  "Main": "morgott.ultimatesaver.UltimateSaver",
+  "ServerVersion": "*",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": false,
+  "early": true,
+  "Hyxin": {
+    "Configs": [
+      "ultimatesaver.mixins.json"
+    ]
+  }
+}
