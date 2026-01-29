@@ -1,5 +1,7 @@
 # UltimateSaver
 
+[![en](https://img.shields.io/badge/lang-English-blue)](README.md) [![ru](https://img.shields.io/badge/lang-Русский-green)](README.ru.md)
+
 Per-weapon ultimate charge storage for Hytale. Each weapon remembers its SignatureEnergy (ultimate) independently.
 
 ## The Problem
@@ -8,22 +10,11 @@ In vanilla Hytale, **ultimate charge is lost when you switch away from a weapon*
 
 ## Features
 
-- **Ultimate charge persists on weapon switch** — the main feature! No more losing your charged ultimate when switching weapons
-- **Individual charge tracking** — each weapon stores its own SignatureEnergy in item metadata
+- **Ultimate charge persists on weapon switch** — each weapon stores its own SignatureEnergy in item metadata
+- **Individual charge tracking** — each weapon stores its own charge level
 - **Partial charge support** — saves any charge level, not just full ultimate
-- **Persistent storage** — charge is saved when you:
-  - Switch to another weapon
-  - Store it in a chest
-  - Trade with other players
-- **Multiplayer compatible** — works correctly when other players pick up your weapons
-
-## Technical Details
-
-This mod uses an **event-based architecture** with Mixin injection rather than tick-based systems. This means:
-
-- **Zero performance overhead** during normal gameplay
-- Code only executes when weapon stats are recalculated (on weapon switch)
-- No continuous polling or per-tick checks
+- **Persistent storage** — charge is saved when you: switch weapons, store in chest, trade
+- **Zero performance overhead** — event-based architecture, no tick polling
 
 ## Requirements
 
@@ -40,7 +31,7 @@ This mod uses an **event-based architecture** with Mixin injection rather than t
    UserData/EarlyPlugins/
    ```
 
-2. Download `UltimateSaver-*.*.*.jar` and place it in your **world save folder**:
+2. Download `UltimateSaver-x.x.x.jar` and place it in your **world save folder**:
    ```
    UserData/Saves/<YourWorldName>/earlyplugins
    ```
@@ -57,7 +48,7 @@ This mod uses an **event-based architecture** with Mixin injection rather than t
    <ServerRoot>/earlyplugins/
    ```
 
-2. Download `UltimateSaver-*.*.*.jar` and place it in:
+2. Download `UltimateSaver-x.x.x.jar` and place it in:
    ```
    <ServerRoot>/earlyplugins/
    ```
@@ -76,10 +67,6 @@ This allows you to have multiple weapons with different charge levels — perfec
 
 - Works with any weapon that uses the standard SignatureEnergy stat system
 - Compatible with other mods that don't modify weapon ultimate behavior
-
-## Source Code
-
-This mod is open source. Feel free to learn from or contribute to the codebase.
 
 ## Credits
 
