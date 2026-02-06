@@ -1,7 +1,7 @@
 {
   "Group": "Morgott",
   "Name": "UltimateSaver",
-  "Version": "1.0.0",
+  "Version": "0.0.2",
   "Description": "Per-weapon ultimate charge storage. Each weapon remembers its SignatureEnergy when switching.",
   "Authors": [
     {

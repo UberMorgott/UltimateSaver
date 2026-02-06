@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "morgott"
-version = "1.0.0"
+version = "0.0.2"
 
 repositories {
     mavenCentral()
@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly(files("libs/HytaleServer.jar"))
+    compileOnly(files("../../../Hytale/install/release/package/game/latest/Server/HytaleServer.jar"))
     compileOnly("net.fabricmc:sponge-mixin:0.15.4+mixin.0.8.7")
     compileOnly("io.github.llamalad7:mixinextras-common:0.4.1")
 }
